@@ -1,0 +1,2 @@
+org.storck.medium.separation.services.provider.ConsoleGreeterProvider
+org.storck.medium.separation.services.provider.LoggingGreeterProvider
