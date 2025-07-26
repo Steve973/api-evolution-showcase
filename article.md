@@ -16,6 +16,13 @@ your Spring Boot application, for example.  While the information in this
 article may still apply to that use case, we will focus on the efforts of
 producing a clean and proper API for end-user dependencies.
 
+While the title implies that I think there is a **correct** way to design an
+API, the reality is not so clear-cut.  The notion of correctness is contextual,
+and it is the context that determines the best course of action: requirements,
+audience, team approach and mission, etc. Our goal, as developers, is to
+understand enough about what we are doing, so that we can make the best decision
+that the situation requires.
+
 We will explore this by walking through the evolution of a project. We will
 start at the early exploratory phase, then examine how and when interfaces
 emerge, how the project might be organized around them, and how each approach
