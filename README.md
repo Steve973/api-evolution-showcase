@@ -13,6 +13,15 @@ wiring logic into distinct, purpose-driven artifacts.
 
 ---
 
+## The Published Medium Article
+
+What follows is some information about the ideas that went into the published
+article, but if you want to skip all of that, then you can find the article that
+I published to Medium
+[here](https://medium.com/@steve973/are-you-building-java-apis-incorrectly-hint-probably-i-was-3f46fd108752).
+
+---
+
 ## Project Modules
 
 ### 00-the-blob
