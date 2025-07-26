@@ -18,9 +18,8 @@ wiring logic into distinct, purpose-driven artifacts.
 What follows is some information about the ideas that went into the published
 article, but if you want to skip all of that, then you can find the article that
 I published to Medium
-[here](https://medium.com/@steve973/are-you-building-java-apis-incorrectly-hint-probably-i-was-3f46fd108752). The article is broken into sections that link to each of the
-project modules that are discussed below, and the article provides a more
-engaging narrative than this document.
+[here](https://medium.com/@steve973/are-you-building-java-apis-incorrectly-hint-probably-i-was-3f46fd108752). The article includes links to each project module and provides a
+more engaging narrative version of what is discussed below.
 
 ---
 
