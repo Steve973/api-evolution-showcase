@@ -26,6 +26,13 @@ engaging narrative than this document.
 
 ## Project Modules
 
+Obligatory Disclaimer: There is no "objectively best" approach or structure to
+follow when you design your API. The best approach is whatever you (and/or your
+team) decide to implement, given your requirements, goals, preferences, and any
+other factor that constitutes an "informed decision". The goal of this project
+and article is not to *prescribe*, but to contribute some potentially
+overlooked details to your evaluative criteria.
+
 ### 00-the-blob
 
 > _"All code lives together in harmony. Until it doesn't."_
