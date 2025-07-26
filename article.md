@@ -33,6 +33,8 @@ rigid and formal.  Instead, we can operate in "creative mode".  This is where we
 create what is known as "The Blob".  It consists of a bunch of concrete classes
 that are all collocated in a single package.  For reference, please see:
 
+![00-the-blob](images/00-the-blob.png)
+
 [`00-the-blob`](https://github.com/Steve973/api-evolution-showcase/tree/main/00-the-blob)
 
 Clearly, there is no API here, since the classes are all concrete
@@ -71,11 +73,15 @@ The first approach involves splitting our "blob" into `api` and `impl`
 **packages** within a single project. This is a common pattern and often feels
 like a good first step toward modularity. You can examine that here:
 
+![01-faux-api](images/01-faux-single.png)
+
 [`01-faux-api`](https://github.com/Steve973/api-evolution-showcase/tree/main/01-faux-api)
 
 The second approach goes a step further and moves the `api` and `impl` into
 separate **modules**, where each has its own artifact. That version can be found
 here:
+
+![02-the-superficial-split](images/02-superficial-split.png)
 
 [`02-the-superficial-split`](https://github.com/Steve973/api-evolution-showcase/tree/main/02-the-superficial-split)
 
@@ -126,6 +132,8 @@ constructed.
 
 You can explore this version here:
 
+![03-service-factories](images/03-factories.png)
+
 [`03-service-factories`](https://github.com/Steve973/api-evolution-showcase/tree/main/03-service-factories)
 
 This structure introduces several improvements:
@@ -160,6 +168,8 @@ be introduced simply by adding a JAR file that registers a provider. No code
 changes are required to enable the new behavior.
 
 You can examine a basic version of this architecture here:
+
+![04-api-spi-separation](images/04-spi-split.png)
 
 [`04-api-spi-separation`](https://github.com/Steve973/api-evolution-showcase/tree/main/04-api-spi-separation)
 
@@ -205,13 +215,15 @@ overhead without delivering value.
 
 You can examine the improved version here:
 
+![05-a-real-solution](images/05-api-spi-final.png)
+
 [`05-a-real-solution`](https://github.com/Steve973/api-evolution-showcase/tree/main/05-a-real-solution)
 
 In this final version:
 
 - API and SPI interfaces are housed in a single `api` module
-  - SPI types live in a dedicated `spi` package to indicate audience and intent
-  - There is no need to manage dependency alignment between separate artifacts
+    - SPI types live in a dedicated `spi` package to indicate audience and intent
+    - There is no need to manage dependency alignment between separate artifacts
 - The `core` module handles instantiation using `ServiceLoader`, just as before
 - The `services` module provides actual implementations and registers them via
   `META-INF/services`
